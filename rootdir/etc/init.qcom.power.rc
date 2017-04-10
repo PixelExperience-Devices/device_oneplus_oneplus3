@@ -25,11 +25,9 @@ on boot
     write /proc/sys/kernel/sched_boost 1
 
 on enable-low-power
-    # Disable thermal hotplug to switch governor
-    write /sys/module/msm_thermal/core_control/enabled 0
-
-    # Set sync wakee policy tunable
-    write /proc/sys/kernel/sched_prefer_sync_wakee_to_waker 1
+    # Enable Adaptive LMK
+    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
+    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 81250
 
     # Configure governor settings for little cluster
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
@@ -66,9 +64,12 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/ignore_hispeed_on_notif 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/enable_prediction 1
 
+<<<<<<< HEAD
     # Re-enable thermal hotplug
     write /sys/module/msm_thermal/core_control/enabled 1
 
+=======
+>>>>>>> d42bf16... oneplus3: Remove msm-thermal, thermal-engine, and bcl
     # Input boost configuration
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1324800 2:1324800"
     write /sys/module/cpu_boost/parameters/input_boost_ms 40
@@ -149,7 +150,6 @@ on charger
     write /sys/devices/system/cpu/cpu1/online 0
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
-    write /sys/module/msm_thermal/core_control/cpus_offlined 14
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "powersave"
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     # Enable UFS powersaving
