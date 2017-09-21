@@ -71,8 +71,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_CONFIG := large xlarge normal
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREBUILT_DPI := xhdpi xxhdpi hdpi xxxhdpi mdpi
+
 
 # Device was launched with M
 PRODUCT_PROPERTY_OVERRIDES += \
