@@ -188,6 +188,18 @@ persist.data.iwlan.enable=true
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.data_con_rprt=1
 persist.radio.efssync=true
+
+# IMS
+persist.data.iwlan.enable=true
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.calls.on.ims=1
+persist.radio.data_ltd_sys_ind=1
+persist.radio.data_con_rprt=1
+persist.radio.rat_on=combine
+persist.volte_enabled_by_hw=1
 #end
 
 # Display power reduction (FOSS)
