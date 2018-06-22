@@ -64,12 +64,9 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/ignore_hispeed_on_notif 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/enable_prediction 1
 
-<<<<<<< HEAD
     # Re-enable thermal hotplug
     write /sys/module/msm_thermal/core_control/enabled 1
 
-=======
->>>>>>> d42bf16... oneplus3: Remove msm-thermal, thermal-engine, and bcl
     # Input boost configuration
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1324800 2:1324800"
     write /sys/module/cpu_boost/parameters/input_boost_ms 40
