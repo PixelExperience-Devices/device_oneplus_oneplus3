@@ -66,7 +66,7 @@
     <!-- Button brightness -->
     <bool name="config_button_brightness_support">true</bool>
 
- <!-- Whether the always on display mode is available. -->
+    <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
     <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
@@ -74,5 +74,8 @@
 
     <!-- Whether device has dash charging support -->
     <bool name="config_hasDashCharger">true</bool>
+
+    <!-- If true, the display will be shifted around in ambient mode. --> 
+    <bool name="config_enableBurnInProtection">true</bool>
 
 </resources>
