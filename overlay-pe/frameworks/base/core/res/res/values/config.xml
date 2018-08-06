@@ -48,6 +48,7 @@
      NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
     <bool name="config_proximityCheckOnWake">true</bool>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+    <integer name="config_proximityCheckTimeout">100</integer>
 
     <!-- Does the notification LED support multiple colors?
          Used to decide if the user can change the colors -->
@@ -77,5 +78,28 @@
 
     <!-- If true, the display will be shifted around in ambient mode. --> 
     <bool name="config_enableBurnInProtection">true</bool>
+
+    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
+         May be less than the minimum allowed brightness setting
+         that can be set by the user. -->
+    <integer name="config_screenBrightnessDoze">10</integer>
+
+    <!-- Stop listening to the fingerprint reader when NON-WAKEUP proximity sensor is covered & screen is off. 
+         config_proximityCheckOnWake must be true. --> 
+    <bool name="config_proximityCheckOnFingerprintWake">true</bool> 
+
+    <!-- If true, the doze component is not started until after the screen has been
+          turned off and the screen off animation has been performed. -->
+    <bool name="config_dozeAfterScreenOff">true</bool>
+
+
+    <!-- Controls the WiFi wakeup feature.
+    0 = Not available.
+    1 = Available.
+    -->
+    <integer translatable="false" name="config_wifi_wakeup_available">1</integer>
+
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
 </resources>

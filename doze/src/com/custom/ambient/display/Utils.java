@@ -1,6 +1,5 @@
 /*
  * Copyright (c) 2015 The CyanogenMod Project
- *               2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,18 +14,17 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package com.custom.ambient.display;
 
+import android.app.ActivityManager;
+import android.app.ActivityManager.RunningServiceInfo;
 import android.content.Context;
 import android.content.Intent;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
+import android.content.SharedPreferences;
 import android.os.UserHandle;
-import android.support.v7.preference.PreferenceManager;
+import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.util.Log;
-
-import static android.provider.Settings.Secure.DOZE_ENABLED;
 
 public final class Utils {
 
@@ -35,38 +33,35 @@ public final class Utils {
 
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
-    protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
+    protected static final String AMBIENT_DISPLAY_KEY = "ambient_display";
+    protected static final String PICK_UP_KEY = "pick_up";
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
 
     protected static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
-        context.startServiceAsUser(new Intent(context, DozeService.class),
-                UserHandle.CURRENT);
+        context.startService(new Intent(context, DozeService.class));
     }
 
     protected static void stopService(Context context) {
         if (DEBUG) Log.d(TAG, "Stopping service");
-        context.stopServiceAsUser(new Intent(context, DozeService.class),
-                UserHandle.CURRENT);
-    }
-
-    protected static void checkDozeService(Context context) {
-        if (isDozeEnabled(context) && sensorsEnabled(context)) {
-            startService(context);
-        } else {
-            stopService(context);
-        }
+        context.stopService(new Intent(context, DozeService.class));
     }
 
     protected static boolean isDozeEnabled(Context context) {
         return Settings.Secure.getInt(context.getContentResolver(),
-                DOZE_ENABLED, 1) != 0;
+                Settings.Secure.DOZE_ENABLED, 1) != 0;
     }
 
     protected static boolean enableDoze(boolean enable, Context context) {
-        return Settings.Secure.putInt(context.getContentResolver(),
-                DOZE_ENABLED, enable ? 1 : 0);
+        boolean dozeEnabled = Settings.Secure.putInt(context.getContentResolver(),
+                Settings.Secure.DOZE_ENABLED, enable ? 1 : 0);
+        if (enable) {
+            startService(context);
+        } else {
+            stopService(context);
+        }
+        return dozeEnabled;
     }
 
     protected static void launchDozePulse(Context context) {
@@ -77,7 +72,7 @@ public final class Utils {
 
     protected static boolean pickUpEnabled(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context)
-                .getBoolean(GESTURE_PICK_UP_KEY, false);
+                .getBoolean(PICK_UP_KEY, false);
     }
 
     protected static boolean handwaveGestureEnabled(Context context) {
@@ -93,14 +88,5 @@ public final class Utils {
     protected static boolean sensorsEnabled(Context context) {
         return pickUpEnabled(context) || handwaveGestureEnabled(context)
                 || pocketGestureEnabled(context);
-    }
-
-    protected static Sensor getSensor(SensorManager sm, String type) {
-        for (Sensor sensor : sm.getSensorList(Sensor.TYPE_ALL)) {
-            if (type.equals(sensor.getStringType())) {
-                return sensor;
-            }
-        }
-        return null;
     }
 }

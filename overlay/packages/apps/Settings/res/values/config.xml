@@ -24,4 +24,9 @@
        3 = right side
   -->
   <integer name="config_fingerprintSensorLocation">1</integer>
+  
+  <!-- Device specific doze package -->
+<string name="config_customDozePackage">com.custom.ambient.display/com.custom.ambient.display.DozeSettings</string> 
+
+
 </resources>
