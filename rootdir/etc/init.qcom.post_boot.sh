@@ -3409,6 +3409,8 @@ case "$target" in
         # set idle GPU to 133 Mhz
         echo 6 > /sys/class/kgsl/kgsl-3d0/default_pwrlevel
         echo 7 > /sys/class/kgsl/kgsl-3d0/default_pwrlevel
+        echo 6 > /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+        echo 7 > /sys/class/kgsl/kgsl-3d0/min_pwrlevel
 
         for memlat in /sys/class/devfreq/*qcom,memlat-cpu*
         do
