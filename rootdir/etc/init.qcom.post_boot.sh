@@ -3406,6 +3406,9 @@ case "$target" in
             echo 250 > $cpubw/bw_hwmon/up_scale
             echo 1600 > $cpubw/bw_hwmon/idle_mbps
         done
+        # set idle GPU to 133 Mhz
+        echo 6 > /sys/class/kgsl/kgsl-3d0/default_pwrlevel
+        echo 7 > /sys/class/kgsl/kgsl-3d0/default_pwrlevel
 
         for memlat in /sys/class/devfreq/*qcom,memlat-cpu*
         do
