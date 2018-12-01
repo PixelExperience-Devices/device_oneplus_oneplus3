@@ -455,6 +455,12 @@ PRODUCT_PACKAGES += \
     init.oneplus3.rc \
     ueventd.qcom.rc
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_op3
