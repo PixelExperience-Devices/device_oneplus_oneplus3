@@ -207,6 +207,10 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+#Dirac
+PRODUCT_PACKAGES += \
+     Dirac
+
 # Display/Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8996 \
