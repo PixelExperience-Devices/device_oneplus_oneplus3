@@ -1,2 +1,7 @@
 allow init proc_touchpanel:file rw_file_perms;
 allow init sysfs_leds:lnk_file r_file_perms;
+allow init dash_device:chr_file { getattr write ioctl};
+allow init rootfs:file execute_no_trans;
+allow init system_file:file execute_no_trans;
+allow init sysfs_battery_supply:file { read open };
+allow init sysfs_usb_supply:file { read open };

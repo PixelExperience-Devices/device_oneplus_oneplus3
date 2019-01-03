@@ -1,0 +1,1 @@
+allow ims ctl_stop_prop:property_service set;

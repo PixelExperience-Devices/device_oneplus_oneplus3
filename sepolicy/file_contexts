@@ -5,6 +5,7 @@
 
 # Charger
 /dev/dash                                                       u:object_r:dash_device:s0
+/sbin/dashd                                                     u:object_r:dashd_exec:s0
 
 # Display
 /sys/devices/virtual/graphics/fb0/dci_p3                        u:object_r:sysfs_livedisplay:s0

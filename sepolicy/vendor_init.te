@@ -1,6 +1,7 @@
 allow vendor_init {
   camera_data_file
   fingerprintd_data_file
+  dash_device
   media_rw_data_file
   nfc_data_file
   radio_data_file
