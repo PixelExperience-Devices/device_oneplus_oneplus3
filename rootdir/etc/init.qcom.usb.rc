@@ -104,7 +104,6 @@ on boot
     write /sys/class/android_usb/android0/f_ffs/aliases adb
     setprop vendor.usb.controller ${sys.usb.controller}
 
-on load_persist_props_action
     enable vendor.qcom-usb-sh
 
 service vendor.qcom-usb-sh /vendor/bin/init.qcom.usb.sh
