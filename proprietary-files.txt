@@ -486,6 +486,11 @@ vendor/lib64/vendor.qti.latency@2.0.so|15e50ce40e210993343406947dd2c959920f40c8
 # DASH
 -sbin/dashd;rootfs
 
+# Dirac - from Xiaomi
+vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+
 # DPM - from daisy - PKQ1.180917.001
 bin/dpmd|1b38829a7faf33d5cbdc195d703f99384c20c9f4
 etc/dpm/dpm.conf|5f19d3984b5291ac956552bda2a84c10c535df0a
