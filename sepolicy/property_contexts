@@ -1,2 +1,5 @@
 sys.qcom.thermalcfg                 u:object_r:thermal_prop:s0
 ctl.thermal-engine                  u:object_r:thermal_prop:s0
+
+# Dirac
+persist.audio.dirac.                u:object_r:dirac_prop:s0
