@@ -14,3 +14,6 @@ persist.net.doxlat                      u:object_r:vendor_xlat_prop:s0
 
 # TEE
 sys.listeners.registered                u:object_r:vendor_tee_listener_prop:s0
+
+# Dirac
+persist.audio.dirac.                                          u:object_r:dirac_prop:s0
