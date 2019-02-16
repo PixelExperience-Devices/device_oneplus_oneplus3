@@ -374,6 +374,9 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Performance
+include vendor/qcom/common/qti-vendor.mk
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
