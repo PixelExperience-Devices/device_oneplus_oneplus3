@@ -75,6 +75,7 @@ audio.deep_buffer.media=true
 
 #set AudioFlinger client heap size
 ro.af.client_heap_size_kbyte=7168
+audio_hal.period_multiplier=2
 
 # Reduce client buffer size for fast audio output tracks
 af.fast_track_multiplier=1
