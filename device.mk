@@ -29,7 +29,7 @@ $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-pe
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -313,14 +313,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service
 
-# Lineage hardware
+# LiveDisplay native
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oneplus3 \
-    vendor.lineage.trust@1.0-service
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.oneplus3
+   libjni_livedisplay
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -490,4 +485,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+$(call inherit-product, device/oneplus/common/common.mk)

@@ -168,6 +168,10 @@ TARGET_INIT_VENDOR_LIB := libinit_oneplus3
 TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus3
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
+#KeyDisabler
+JAVA_SOURCE_OVERLAYS := \
+    org.pixelexperience.keydisabler|$(PLATFORM_PATH)/keydisabler|**/*.java
+
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
