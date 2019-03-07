@@ -145,9 +145,6 @@ ro.nfc.port=I2C
 #ro.vendor.at_library=libqti-at.so
 #sys.games.gt.prof=1
 
-#default usb composition
-#persist.sys.usb.config=diag,serial_cdev,serial_tty,rmnet_ipa,mass_storage,adb
-
 #property to enable VDS WFD solution
 persist.hwc.enable_vds=1
 
