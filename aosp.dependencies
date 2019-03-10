@@ -1,10 +1,18 @@
 [
   {
-    "repository": "android_device_oppo_common",
-    "target_path": "device/oppo/common"
+    "remote": "github",
+    "repository": "Hlcpereira/device_oneplus_common",
+    "target_path": "device/oppo/common",
+    "branch": "pie"
   },
   {
     "repository": "android_kernel_oneplus_msm8996",
     "target_path": "kernel/oneplus/msm8996"
+  },
+  {
+    "remote": "github",
+    "repository" : "TheMuppets/proprietary_vendor_oneplus",
+    "target_path": "vendor/oneplus",
+    "branch": "lineage-16.0"
   }
 ]
