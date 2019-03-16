@@ -58,7 +58,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/hab                  0666   system     system
 /dev/synx_device          0660   root       camera
 
-
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
 
@@ -206,14 +205,13 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/ttyHSL1              0660   system     system
 /dev/ttyHS1               0660   system     system
 /dev/mdm                  0660   system     radio
-/sys/devices/virtual/smdpkt/smdcntl*       open_timeout   0664 radio radio
+/sys/devices/virtual/smdpkt/smdcntl*        open_timeout   0664 radio radio
 /dev/sdio_tty_ciq_00      0660   system     system
 /dev/tty_sdio_00          0660   system     system
 /dev/ttyGS0               0660   system     system
-/dev/i2c-5                0660   media       media
+/dev/i2c-5                0660   media      media
 /dev/avtimer              0660   system     audio
 /dev/spidev2.0            0660   system     audio
-/dev/cpu_dma_latency      0660   system     audio
 
 # DVB devices
 /dev/dvb/adapter0/demux*  0440   media       media
@@ -400,3 +398,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/graphics/fb0     dynamic_bitclk           0664    system  graphics
 
 /sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
+
+#QG device
+/dev/qg               0660   system     system
+/dev/qg_battery       0660   system     system
