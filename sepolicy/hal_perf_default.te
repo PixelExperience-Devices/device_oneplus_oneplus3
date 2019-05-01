@@ -1,2 +1,6 @@
 dontaudit hal_perf_default self:capability dac_override;
 set_prop(hal_perf_default, vendor_mpctl_prop)
+allow hal_perf_default system_server:dir {search read write open};
+allow hal_perf_default system_server:file {read write open};
+allow hal_perf_default priv_app:file write;
+r_dir_file(hal_perf_default, hal_power_default)
