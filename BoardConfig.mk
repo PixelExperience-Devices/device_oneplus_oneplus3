@@ -225,6 +225,8 @@ include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
+SELINUX_IGNORE_NEVERALLOWS = true
+
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /vendor/lib/hw/camera.msm8996.so|libcamera_shim.so
