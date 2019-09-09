@@ -508,4 +508,6 @@
     -->
     <integer name="config_longPressOnHomeBehavior">2</integer>
 
+    <!-- Minimum color temperature, in Kelvin, supported by Night display. -->
+    <integer name="config_nightDisplayColorTemperatureMin">1200</integer>
 </resources>
