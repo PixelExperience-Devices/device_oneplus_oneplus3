@@ -275,7 +275,8 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor
+    libavservices_minijail.vendor \
+    ims-ext-common_system
 
 # IPv6
 PRODUCT_PACKAGES += \
