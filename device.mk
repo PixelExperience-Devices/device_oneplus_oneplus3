@@ -398,7 +398,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
-    $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+    $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
+    $(LOCAL_PATH)/configs/android.hardware.camera.ar.xml:system/vendor/etc/permissions/android.hardware.camera.ar.xml
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.va_aosp.support=1
