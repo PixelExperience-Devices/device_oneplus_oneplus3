@@ -226,11 +226,15 @@ persist.radio.is_wps_enabled=true
 persist.radio.videopause.mode=1
 persist.radio.sap_silent_pin=1
 persist.radio.always_send_plmn=true
-persist.rcs.supported=0
+persist.rcs.supported=1
 persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 persist.radio.calls.on.ims=1
+persist.data.iwlan=1
+persist.data.iwlan.ipsec.ap=1
+persist.sys.cust.lte_config=true
+persist.radio.volte.dan_support=true
 
 #The End
