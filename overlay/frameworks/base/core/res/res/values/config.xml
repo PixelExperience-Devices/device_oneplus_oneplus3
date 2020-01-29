@@ -473,4 +473,7 @@
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
 
+    <!-- Button backlight -->
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
 </resources>
