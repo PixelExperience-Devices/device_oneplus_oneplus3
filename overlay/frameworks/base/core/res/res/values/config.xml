@@ -467,4 +467,7 @@
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">true</bool>
 
+    <!-- Disable Navbar by default -->
+    <bool name="config_defaultToNavigationBar">false</bool>
+
 </resources>
