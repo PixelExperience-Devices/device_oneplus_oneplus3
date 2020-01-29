@@ -460,4 +460,11 @@
     -->
     <integer name="config_longPressOnAppSwitchBehavior">1</integer>
 
+    <!-- Does the battery LED support multiple colors? -->
+    <bool name="config_multiColorBatteryLed">true</bool>
+
+    <!-- Do the battery/notification LEDs support pulsing?
+         Used to decide if we show pulse settings -->
+    <bool name="config_ledCanPulse">true</bool>
+
 </resources>
