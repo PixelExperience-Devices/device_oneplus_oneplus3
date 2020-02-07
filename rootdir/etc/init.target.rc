@@ -1,4 +1,4 @@
-# Copyright (c) 2013-2017, The Linux Foundation. All rights reserved.
+# Copyright (c) 2014-2015,2018,2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -36,9 +36,9 @@ on fs
     swapon_all /vendor/etc/fstab.qcom
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
+    restorecon_recursive /mnt/vendor/persist
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/bms 0700 root system
-    restorecon_recursive /mnt/vendor/persist
 
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
