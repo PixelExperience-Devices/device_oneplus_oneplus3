@@ -463,9 +463,8 @@
     <!-- Does the battery LED support multiple colors? -->
     <bool name="config_multiColorBatteryLed">true</bool>
 
-    <!-- Do the battery/notification LEDs support pulsing?
-         Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">true</bool>
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
 
     <!-- Disable Navbar by default -->
     <bool name="config_defaultToNavigationBar">false</bool>
