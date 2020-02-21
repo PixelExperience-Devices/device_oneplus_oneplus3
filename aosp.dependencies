@@ -1,6 +1,26 @@
 [
   {
-    "repository": "android_kernel_oneplus_msm8996",
-    "target_path": "kernel/oneplus/msm8996"
+    "repository": "Gaurav241/kernel_oneplus_msm8996",
+    "target_path": "kernel/oneplus/msm8996",
+    "branch": "ten",
+    "remote": "github"
+  },
+  {
+    "remote": "github",
+    "repository": "PixelExperience-Devices/vendor_oneplus",
+    "target_path": "vendor/oneplus",
+    "branch": "ten"
+  },
+  {
+    "repository": "packages_apps_PixelLiveWallpaper",
+    "target_path": "packages/apps/PixelLiveWallpaper",
+    "branch": "ten",
+    "remote": "pixel-gitlab"
+  },
+  {
+    "repository": "PixelExperience/packages_resources_OneplusGestures",
+    "target_path": "packages/resources/OneplusGestures",
+    "branch": "pie",
+    "remote": "github"
   }
 ]

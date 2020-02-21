@@ -20,12 +20,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from oneplus3 device
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
-# Inherit some common AOSP stuff.
+# Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_GAPPS_ARCH := arm64
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
-
 PRODUCT_NAME := aosp_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
@@ -41,3 +41,7 @@ BUILD_FINGERPRINT := "OnePlus/OnePlus3/OnePlus3:9/PKQ1.181203.001/1907311932:use
 TARGET_VENDOR := oneplus
 
 TARGET_INCLUDE_STOCK_ARCORE := true
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="oneplus3" \
+    TARGET_DEVICE="oneplus3"
