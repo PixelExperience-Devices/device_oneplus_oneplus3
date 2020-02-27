@@ -200,6 +200,7 @@ ro.vendor.display.paneltype=1
 ro.vendor.display.foss=1
 vendor.display.foss.config=1
 vendor.display.foss.config_path=/vendor/etc/FOSSConfig.xml
+debug.sf.enable_gl_backpressure=1
 
 # ADB at boot
 persist.sys.usb.config=adb,mtp
