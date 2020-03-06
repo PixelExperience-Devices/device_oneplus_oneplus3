@@ -24,9 +24,9 @@
     "remote": "github"
   },
   {
-    "repository": "Gaurav241/packages_apps_GoogleCamera_oneplus3",
-    "target_path": "packages/apps/GoogleCamera",
-    "branch": "Android-10.0",
+    "repository": "Gaurav241/vendor_addons_onepluscamera",
+    "target_path": "vendor/addons/onepluscamera",
+    "branch": "ten",
     "remote": "github"
   }
 ]
