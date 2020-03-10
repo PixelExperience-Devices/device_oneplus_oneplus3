@@ -1,0 +1,2 @@
+allow untrusted_app_27 proc_qtaguid_stat:file read;
+allow untrusted_app_27 proc_zoneinfo:file read;

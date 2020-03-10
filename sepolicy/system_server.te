@@ -1,2 +1,4 @@
 # OTA with encrypted f2fs
 allow system_server ota_package_file:dir getattr;
+
+allow system_server persist_camera_prop:file read;
