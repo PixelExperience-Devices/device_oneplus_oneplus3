@@ -30,6 +30,11 @@ vendor.display.disable_skip_validate=1
 vendor.display.foss.config=1
 vendor.display.foss.config_path=/vendor/etc/FOSSConfig.xml
 
+# Display - Blur
+persist.sys.sf.disable_blurs=1
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
+
 # Media
 media.aac_51_output_enabled=true
 vidc.enc.dcvs.extra-buff-count=2
