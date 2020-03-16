@@ -17,7 +17,7 @@
     <string name="app_name" translatable="false">OnePlus Parts</string>
 
     <!-- Buttons -->
-    <string name="buttons_title">Buttons</string>
+    <string name="buttons_title">Miscs</string>
 
     <string name="buttons_swap_title">Swap buttons</string>
     <string name="buttons_swap_description">Swap the order of Back and Recents buttons</string>
