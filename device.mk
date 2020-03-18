@@ -29,8 +29,8 @@ $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# OPCamera
-$(call inherit-product, vendor/addons/onepluscamera/config.mk)
+# GoogleCamera
+$(call inherit-product, packages/apps/GoogleCamera/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
