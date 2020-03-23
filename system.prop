@@ -50,6 +50,7 @@ persist.vendor.radio.start_ota_daemon=1
 persist.vendor.radio.sw_mbn_update=0
 ril.subscription.types=NV,RUIM
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+ro.telephony.iwlan_operation_mode=legacy
 
 # Sensors
 ro.sensor.pickup=oneplus.sensor.pickup
