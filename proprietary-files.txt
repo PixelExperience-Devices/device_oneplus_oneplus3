@@ -985,12 +985,6 @@ vendor/lib64/libthermalioctl.so
 vendor/bin/time_daemon|75b8a6a14cfb4424499ccb2bf1cad011df295d0e
 vendor/lib64/libtime_genoff.so|06df52867790cdbbcc674a3a28d7ad7c8cc161ac
 
-# TP firmware
-etc/firmware/tp/fw_synaptics_15801.img
-etc/firmware/tp/fw_synaptics_15801b.img
-etc/firmware/tp/fw_synaptics_15811.img
-etc/firmware/tp/fw_synaptics_touchkey.img
-
 # Wifi
 vendor/bin/cnss-daemon
 
