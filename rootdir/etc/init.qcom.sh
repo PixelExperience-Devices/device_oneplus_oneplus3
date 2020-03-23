@@ -440,8 +440,8 @@ if [ ! -f /vendor/firmware_mnt/verinfo/ver_info.txt -o "$prev_version_info" != "
     # add W for group recursively before delete
     chmod g+w -R /data/vendor/modem_config/*
     rm -rf /data/vendor/modem_config/*
-    # preserve the read only mode for all subdir and files
-    cp --preserve=m -dr /system/etc/firmware/mbn_ota/* /data/vendor/modem_config
+    # Preserve the read only mode for all subdir and files.
+    cp --preserve=m -dr /vendor/firmware/mbn_ota/* /data/vendor/modem_config
     # cp --preserve=m -d /vendor/firmware_mnt/verinfo/ver_info.txt /data/vendor/modem_config/
     # cp --preserve=m -d /vendor/firmware_mnt/image/modem_pr/mbn_ota.txt /data/vendor/modem_config/
     # the group must be root, otherwise this script could not add "W" for group recursively
