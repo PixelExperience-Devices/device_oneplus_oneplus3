@@ -85,9 +85,8 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
-    # Update touchscreen and keypad firmware
+    # Update keypad firmware.
     write /sys/bus/i2c/devices/12-0020/tp_fw_update 0
-    write /proc/s1302/fw_update 0
 
     # Touchscreen
     chown system system /proc/touchpanel/double_tap_enable
