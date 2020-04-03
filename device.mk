@@ -223,6 +223,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/camera/urnyx05-gcam-op3.xml:storage/emulated/0/Gcam/Configs7/urnyx05-gcam-op3.xml \
+
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     cneapiclient \
