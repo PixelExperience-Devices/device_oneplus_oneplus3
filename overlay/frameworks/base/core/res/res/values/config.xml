@@ -478,9 +478,6 @@
     <!-- Button backlight -->
     <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 
-    <!-- Disable button backlight settings. -->
-    <integer name="config_buttonBrightnessSettingDefault">0</integer>
-
     <!-- The list absolute paths of jar/apk files containing the device specific handlers,
          delimited by File.pathSeparator, which defaults to ":" on Android -->
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
