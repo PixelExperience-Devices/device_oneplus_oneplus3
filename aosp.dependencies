@@ -18,9 +18,9 @@
     "remote": "pixel-gitlab"
   },
   {
-    "repository": "PixelExperience/packages_resources_OneplusGestures",
+    "repository": "Gaurav241/packages_resources_OneplusGestures",
     "target_path": "packages/resources/OneplusGestures",
-    "branch": "pie",
+    "branch": "ten",
     "remote": "github"
   },
   {
