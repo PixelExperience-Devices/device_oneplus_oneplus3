@@ -86,14 +86,4 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/display_title">
-
-        <SwitchPreference
-            android:key="dc_dimming"
-            android:summary="@string/dc_dimming_enable_summary"
-            android:title="@string/dc_dimming_enable_title" 
-            android:icon="@drawable/ic_dc_dimming" />
-
-    </PreferenceCategory>
-
 </PreferenceScreen>

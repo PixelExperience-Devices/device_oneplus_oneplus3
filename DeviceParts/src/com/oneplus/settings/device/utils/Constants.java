@@ -38,9 +38,6 @@ public class Constants {
     public static final String NOTIF_SLIDER_MIDDLE_KEY = "keycode_middle_position";
     public static final String NOTIF_SLIDER_BOTTOM_KEY = "keycode_bottom_position";
 
-    // DC-Dimming
-    public static final String DC_SWITCH_KEY = "dc_dimming";
-
     // Gestures nodes
     public static final String TOUCHSCREEN_CAMERA_NODE = "/proc/touchpanel/letter_o_enable";
     public static final String TOUCHSCREEN_DOUBLE_SWIPE_NODE = "/proc/touchpanel/double_swipe_enable";
@@ -64,9 +61,6 @@ public class Constants {
     public static final String NOTIF_SLIDER_MIDDLE_NODE = "/proc/tri-state-key/keyCode_middle";
     public static final String NOTIF_SLIDER_BOTTOM_NODE = "/proc/tri-state-key/keyCode_bottom";
 
-    // DC-Dimming node
-    public static final String DC_SWITCH_NODE = "/proc/flicker_free/flicker_free";
-
     // Holds <preference_key> -> <proc_node> mapping
     public static final Map<String, String> sBooleanNodePreferenceMap = new HashMap<>();
     public static final Map<String, String> sStringNodePreferenceMap = new HashMap<>();
@@ -86,10 +80,6 @@ public class Constants {
         NOTIF_SLIDER_MIDDLE_KEY,
         NOTIF_SLIDER_BOTTOM_KEY
     };
-    
-    public static final String[] sDCPrefKeys = {
-        DC_SWITCH_KEY
-    };
 
     static {
         sBooleanNodePreferenceMap.put(TOUCHSCREEN_CAMERA_GESTURE_KEY, TOUCHSCREEN_CAMERA_NODE);
@@ -97,7 +87,6 @@ public class Constants {
         sBooleanNodePreferenceMap.put(TOUCHSCREEN_FLASHLIGHT_GESTURE_KEY,
                 TOUCHSCREEN_FLASHLIGHT_NODE);
         sBooleanNodePreferenceMap.put(BUTTON_SWAP_KEY, BUTTON_SWAP_NODE);
-        sBooleanNodePreferenceMap.put(DC_SWITCH_KEY, DC_SWITCH_NODE);
         sStringNodePreferenceMap.put(NOTIF_SLIDER_TOP_KEY, NOTIF_SLIDER_TOP_NODE);
         sStringNodePreferenceMap.put(NOTIF_SLIDER_MIDDLE_KEY, NOTIF_SLIDER_MIDDLE_NODE);
         sStringNodePreferenceMap.put(NOTIF_SLIDER_BOTTOM_KEY, NOTIF_SLIDER_BOTTOM_NODE);
@@ -106,7 +95,6 @@ public class Constants {
         sNodeDefaultMap.put(TOUCHSCREEN_MUSIC_GESTURE_KEY, TOUCHSCREEN_MUSIC_DEFAULT);
         sNodeDefaultMap.put(TOUCHSCREEN_FLASHLIGHT_GESTURE_KEY, TOUCHSCREEN_FLASHLIGHT_DEFAULT);
         sNodeDefaultMap.put(BUTTON_SWAP_KEY, false);
-        sNodeDefaultMap.put(DC_SWITCH_KEY, false);
         sNodeDefaultMap.put(NOTIF_SLIDER_TOP_KEY, "601");
         sNodeDefaultMap.put(NOTIF_SLIDER_MIDDLE_KEY, "602");
         sNodeDefaultMap.put(NOTIF_SLIDER_BOTTOM_KEY, "603");

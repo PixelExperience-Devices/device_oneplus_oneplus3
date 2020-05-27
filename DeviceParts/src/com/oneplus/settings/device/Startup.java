@@ -21,7 +21,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.ServiceManager;
 import android.util.Log;
 
@@ -86,36 +85,6 @@ public class Startup extends BroadcastReceiver {
                     }
                 }
             }
-
-            if (!hasDCDimming()) {
-                disableComponent(context, TouchscreenGestureSettings.class.getName());
-            } else {
-                enableComponent(context, TouchscreenGestureSettings.class.getName());
-                // Restore nodes to saved preference values
-                for (String pref : Constants.sDCPrefKeys) {
-                    String value;
-                    String node;
-                    if (Constants.sStringNodePreferenceMap.containsKey(pref)) {
-                        value = Constants.getPreferenceString(context, pref);
-                        node = Constants.sStringNodePreferenceMap.get(pref);
-                    } else {
-                        value = Constants.isPreferenceEnabled(context, pref) ?
-                                "1" : "0";
-                        node = Constants.sBooleanNodePreferenceMap.get(pref);
-                    }
-                    if (!FileUtils.writeLine(node, value)) {
-                        Log.w(TAG, "Write to node " + node +
-                                " failed while restoring saved preference values");
-                    }
-                }
-                if (Build.DEVICE.equals("OnePlus5")) {
-                    FileUtils.writeLine("/proc/flicker_free/min_brightness", "66");
-                } else if (Build.DEVICE.equals("OnePlus5T")) {
-                    FileUtils.writeLine("/proc/flicker_free/min_brightness", "302");
-                } else {
-                    Log.w(TAG, "Failed to set min_brightness for flicker_free driver");
-                }
-            }
         }
     }
 
@@ -130,10 +99,6 @@ public class Startup extends BroadcastReceiver {
                 new File(Constants.NOTIF_SLIDER_MIDDLE_NODE).exists() &&
                 new File(Constants.NOTIF_SLIDER_BOTTOM_NODE).exists()) ||
                 new File(Constants.BUTTON_SWAP_NODE).exists();
-    }
-
-    private boolean hasDCDimming () {
-        return (new File(Constants.DC_SWITCH_NODE).exists());
     }
 
     private void disableComponent(Context context, String component) {
