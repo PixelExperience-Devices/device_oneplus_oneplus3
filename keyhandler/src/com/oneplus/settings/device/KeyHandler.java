@@ -68,12 +68,12 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final int ZEN_MODE_VIBRATION = 4;
 
     // Supported scancodes
-    private static final int FLIP_CAMERA_SCANCODE = 249;
-    private static final int GESTURE_CIRCLE_SCANCODE = 250;
-    private static final int GESTURE_SWIPE_DOWN_SCANCODE = 251;
-    private static final int GESTURE_V_SCANCODE = 255;
-    private static final int GESTURE_LTR_SCANCODE = 253;
-    private static final int GESTURE_GTR_SCANCODE = 254;
+    private static final int KEY_DOUBLE_TAP = 249;
+    private static final int KEY_GESTURE_CIRCLE = 250;
+    private static final int KEY_GESTURE_TWO_SWIPE = 251;
+    private static final int KEY_GESTURE_DOWN_ARROW = 252;
+    private static final int KEY_GESTURE_LEFT_V = 253;
+    private static final int KEY_GESTURE_RIGHT_V = 254;
     private static final int MODE_TOTAL_SILENCE = 600;
     private static final int MODE_PRIORITY_ONLY = 601;
     private static final int MODE_VIBRATION = 602;
@@ -82,12 +82,12 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final int GESTURE_WAKELOCK_DURATION = 3000;
 
     private static final int[] sSupportedGestures = new int[] {
-        FLIP_CAMERA_SCANCODE,
-        GESTURE_CIRCLE_SCANCODE,
-        GESTURE_SWIPE_DOWN_SCANCODE,
-        GESTURE_V_SCANCODE,
-        GESTURE_LTR_SCANCODE,
-        GESTURE_GTR_SCANCODE
+        KEY_DOUBLE_TAP,
+        KEY_GESTURE_CIRCLE,
+        KEY_GESTURE_TWO_SWIPE,
+        KEY_GESTURE_DOWN_ARROW,
+        KEY_GESTURE_LEFT_V,
+        KEY_GESTURE_RIGHT_V
     };
 
     private static final SparseIntArray sSupportedSliderModes = new SparseIntArray();
@@ -193,8 +193,8 @@ public class KeyHandler implements DeviceKeyHandler {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.arg1) {
-            case FLIP_CAMERA_SCANCODE:
-            case GESTURE_CIRCLE_SCANCODE:
+            case KEY_DOUBLE_TAP:
+            case KEY_GESTURE_CIRCLE:
                 ensureKeyguardManager();
                 final String action;
                 mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
@@ -210,11 +210,11 @@ public class KeyHandler implements DeviceKeyHandler {
                 startActivitySafely(intent);
                 doHapticFeedback();
                 break;
-            case GESTURE_SWIPE_DOWN_SCANCODE:
+            case KEY_GESTURE_TWO_SWIPE:
                 dispatchMediaKeyWithWakeLockToMediaSession(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE);
                 doHapticFeedback();
                 break;
-            case GESTURE_V_SCANCODE: {
+            case KEY_GESTURE_DOWN_ARROW: {
                 String rearCameraId = getRearCameraId();
                 if (rearCameraId != null) {
                     mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
@@ -228,11 +228,11 @@ public class KeyHandler implements DeviceKeyHandler {
                 }
                 break;
             }
-            case GESTURE_LTR_SCANCODE:
+            case KEY_GESTURE_LEFT_V:
                 dispatchMediaKeyWithWakeLockToMediaSession(KeyEvent.KEYCODE_MEDIA_PREVIOUS);
                 doHapticFeedback();
                 break;
-            case GESTURE_GTR_SCANCODE:
+            case KEY_GESTURE_RIGHT_V:
                 dispatchMediaKeyWithWakeLockToMediaSession(KeyEvent.KEYCODE_MEDIA_NEXT);
                 doHapticFeedback();
                 break;
@@ -248,8 +248,8 @@ public class KeyHandler implements DeviceKeyHandler {
             return event;
         }
 
-        // We only want ACTION_UP event, except FLIP_CAMERA_SCANCODE
-        if (scanCode == FLIP_CAMERA_SCANCODE) {
+        // We only want ACTION_UP event, except KEY_DOUBLE_TAP
+        if (scanCode == KEY_DOUBLE_TAP) {
             if (event.getAction() != KeyEvent.ACTION_DOWN) {
                 return null;
             }
