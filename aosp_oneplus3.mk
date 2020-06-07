@@ -26,6 +26,9 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 IS_PHONE := true
 
+# Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2019-10-01
 PRODUCT_NAME := aosp_oneplus3
