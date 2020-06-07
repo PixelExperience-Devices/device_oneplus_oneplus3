@@ -7,9 +7,9 @@
   },
   {
     "remote": "github",
-    "repository": "PixelExperience-Devices/vendor_oneplus",
+    "repository": "Gaurav241/proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
-    "branch": "ten"
+    "branch": "lineage-17.1"
   },
   {
     "repository": "packages_apps_PixelLiveWallpaper",
