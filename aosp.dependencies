@@ -18,8 +18,8 @@
     "remote": "pixel-gitlab"
   },
   {
-    "repository": "Gaurav241/packages_resources_OneplusGestures",
-    "target_path": "packages/resources/OneplusGestures",
+    "repository": "Gaurav241/packages_resources_devicesettings-customs",
+    "target_path": "packages/resources/devicesettings-customs",
     "branch": "ten",
     "remote": "github"
   },
