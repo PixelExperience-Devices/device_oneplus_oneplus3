@@ -435,6 +435,15 @@ vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
+# CDSP - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/cdsprpcd|a1b4c35ffdef184cc1334f3d1cf4fa56546d3621
+vendor/lib/libcdsp_default_listener.so|b5651d73060dcca435c3d7024d8859c3906b866e
+vendor/lib/libcdsprpc.so|9750eea144367d7247f2f5486bc2cc7138b1ce67
+vendor/lib/libsysmon_cdsp_skel.so|d85f4593a2d6dd4d0a4812799166a3960c4f571b
+vendor/lib64/libcdsp_default_listener.so|f190bb35ca2a07c28735e413e800bc2b7bf924a9
+vendor/lib64/libcdsprpc.so|59f5ef769796f261f975af8bdeb512c9ba6653ca
+vendor/lib64/libsysmon_cdsp_skel.so|a79e0c344ef325cecd28e076b08a17573f255d45
+
 # CNE - from LA.UM.8.6.r1-04400-89xx.0
 etc/cne/Nexus/ATT/ATT_profiles.xml|a0039cb3a4c5a4ca1adf897904b61c91e32d06f7
 etc/cne/Nexus/ROW/ROW_profiles.xml|e3907ff71cbbe0f1073ec1bf0223d26c8282aa35
