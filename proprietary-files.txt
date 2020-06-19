@@ -502,24 +502,24 @@ vendor/lib64/vendor.qti.latency@2.0.so|20a3037a1aea98f5f490b14c8f5620d2d3a0cf57
 # DASH
 sbin/dashd:vendor/bin/dashd
 
-# DPM - from miui_DAISYGlobal_V11.0.2.0.QDLMIXM_d59f395371_10.0
-product/bin/dpmd|cac8f3eadeeec202f56d5b5f7a8c75e82e376d9f
+# DPM - from LA.UM.8.6.r1-04400-89xx.0
+product/bin/dpmd|90cdd79b564456cef2a0c011afab3896463df5e4
 product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
-product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
+product/etc/permissions/com.qti.dpmframework.xml|f57aa37de402a2c239fdadb65ac044d364ec1114
 product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
-product/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
+product/framework/com.qti.dpmframework.jar|d1f745f1394105d94362bc8dce8920cdd3e07aaa
 product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
 product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
-product/lib64/libdpmctmgr.so|7ee0d1d40a8fc7fea924602db13717235ed2c2aa
-product/lib64/libdpmfdmgr.so|cb0157da0ffe6827471662a5b7881e85165cb5aa
-product/lib64/libdpmframework.so|8b2183e4b50a033b10c640cbc0b14a39ed5dca16
-product/lib64/libdpmtcm.so|a98ab3c419ebe49c6f3351ef4fa64ebda65d0e7d
--product/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
-vendor/bin/dpmQmiMgr|a43829d478ebc243b5f7307b44aa501a7a3c8211
+product/lib64/libdpmctmgr.so|2e12d384caf2969d4137ceff25cef13781327abf
+product/lib64/libdpmfdmgr.so|97b2f505285ed372a9f3d8a13682ea4022dbd70a
+product/lib64/libdpmframework.so|d90b87f75a62ed091db5b2478307fc402972be7a
+product/lib64/libdpmtcm.so|9f99848e2574d2302692446d5dd87cd90f972b0c
+-product/priv-app/dpmserviceapp/dpmserviceapp.apk|68b6f0227ae0b065dff635f30bfdc3c23f90c395
+vendor/bin/dpmQmiMgr|088e6513ff702d524fcf1c2a4e84f79f744a0543
 vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
-vendor/lib64/libdpmqmihal.so|25d74c0e867f023b71a7c599ab6d213c7de2725d
+vendor/lib64/libdpmqmihal.so|3ec8ff45991cdb502e9297e049197d02e2c7e941
 
 # DRM
 vendor/bin/qseecomd
