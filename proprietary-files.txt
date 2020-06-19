@@ -548,9 +548,9 @@ lib64/hw/fingerprint.msm8996:vendor/lib64/hw/fingerprint.msm8996.so|7893060dddb0
 lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|217e4490e27888bf4857d190d3cb14525135da53
 lib64/vendor.oneplus.fingerprint.extension@1.0.so:vendor/lib64/vendor.oneplus.fingerprint.extension@1.0.so|4ae828b75eb4e5765ad8c266793b53ddf47bdc32
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.msm8996.so
-vendor/lib64/hw/gatekeeper.msm8996.so
+# Gatekeeper - from LA.UM.8.6.r1-04400-89xx.0
+vendor/lib/hw/gatekeeper.msm8953.so:vendor/lib/hw/gatekeeper.msm8996.so|c17725b59dac2effb3423edc60085366dd629e62
+vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8996.so|b3a9d78faa65029b0a20f2ff6dfe986bc80b64c1
 
 # GPS - from miui_DAISYGlobal_V11.0.2.0.QDLMIXM_d59f395371_10.0
 etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01cb
@@ -650,9 +650,9 @@ vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
 vendor/lib/hw/vulkan.msm8953.so:vendor/lib/hw/vulkan.msm8996.so|96e694ff485524699bfc8f019d36c984028e42cf
 vendor/lib64/hw/vulkan.msm8953.so:vendor/lib64/hw/vulkan.msm8996.so|9ad22bd5b521a327fbae82e1dac432c431804d67
 
-# Keystore
-vendor/lib/hw/keystore.msm8996.so
-vendor/lib64/hw/keystore.msm8996.so
+# Keystore - from LA.UM.8.6.r1-04400-89xx.0
+vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8996.so|9d4ae263688bcf3f4555255ff2f243f9bdff2032
+vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8996.so|265cd4d0246f5e2e80916dd1c96262be28306b31
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8996.so
