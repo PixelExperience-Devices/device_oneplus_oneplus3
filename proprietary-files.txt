@@ -980,11 +980,11 @@ vendor/bin/thermal-engine
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services - from miui_DAISYGlobal_V11.0.2.0.QDLMIXM_d59f395371_10.0
-bin/move_time_data.sh|56f1f79a88db709a0c7ed5c507b14c55976d6f32
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
-vendor/bin/time_daemon|75b8a6a14cfb4424499ccb2bf1cad011df295d0e
-vendor/lib64/libtime_genoff.so|06df52867790cdbbcc674a3a28d7ad7c8cc161ac
+# Time services - from LA.UM.8.6.r1-04400-89xx.0
+-vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|f972aec98d7034b36f7d7facfab13c8855850f5b
+vendor/bin/time_daemon|ccac9c14dcb7f2be8622bc64eeb1820ba595d0fd
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+vendor/lib64/libtime_genoff.so|b056a9bc0ab6642369eda0ce3b097b036da2b24e
 
 # TP firmware
 etc/firmware/tp/fw_synaptics_15801.img
