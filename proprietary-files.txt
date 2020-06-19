@@ -538,11 +538,15 @@ vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
 vendor/lib/libwvhidl.so
 
-# Fingerprint sensor
-lib64/fp_hal_extension.so
-lib64/hw/fingerprint.msm8996.so
-lib64/lib_fpc_tac_shared.so
-lib64/vendor.oneplus.fingerprint.extension@1.0.so
+# Fingerprint - OOS
+lib/fp_hal_extension.so:vendor/lib/fp_hal_extension.so|ad81b270f15cd74de80e2d5bf54547203d6524af
+lib/hw/fingerprint.msm8996:vendor/lib/hw/fingerprint.msm8996.so|eb2485fbb03a3386cd11d0a6f90574fa91023f05
+lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so|eacd5319aad96c79507d875343494b0771a7bc90
+lib/vendor.oneplus.fingerprint.extension@1.0.so:vendor/lib/vendor.oneplus.fingerprint.extension@1.0.so|60d94ce1329f8c82a0fa8bf3462fa3ceb93f8a34
+lib64/fp_hal_extension.so:vendor/lib64/fp_hal_extension.so|24c9f62c94c626253b2dc70e125602b00ced3cb1
+lib64/hw/fingerprint.msm8996:vendor/lib64/hw/fingerprint.msm8996.so|7893060dddb0719319f937da5fdba0604cb28e03
+lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|217e4490e27888bf4857d190d3cb14525135da53
+lib64/vendor.oneplus.fingerprint.extension@1.0.so:vendor/lib64/vendor.oneplus.fingerprint.extension@1.0.so|4ae828b75eb4e5765ad8c266793b53ddf47bdc32
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.msm8996.so
