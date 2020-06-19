@@ -79,13 +79,20 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|bff85b0dace95a68a38549b0979f7c0fa6f
 # Audio (firmware) - OOS
 etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt|4c6acd032186f062fe6c5af58fb82fca91fccbcd
 
-# Bluetooth
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
+# Bluetooth - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|063d4838548e0f3546b509ece621e5f97b51bed0
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|66f5b40d50e91be92d7ab3500641c9a5b3b2f367
+vendor/lib64/libbtnv.so|143ba8a42154a26469b87243ae3e1cd5e9565b13
+vendor/lib64/libbt-hidlclient.so|4682c8711fe78bb73448b34c30181948989400bf
 
-# Bluetooth - from LA.UM.7.5.r1-04000-8x96.0
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|e29484b7d03c9e47fbb264e2f3b272bf80db8d0d
+# Bluetooth (Audio) - from LA.UM.8.6.r1-04400-89xx.0
+vendor/lib64/hw/audio.bluetooth_qti.default.so|a17474dec03b704cc9741c85f2f6aef62c5ad71e
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|4e188cd7cc009ced6af7901f357005623dd0875a
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|df20addad1f9c1c8b342aeee1ff9a5fbc5cf8bb8
+vendor/lib64/libbluetooth_audio_session_qti.so|ac99d03635322385bedf8db2a6e318b996349203
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|237a97fc3d3332b1466583178b548dd1525479ef
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|5677a85470b88400467410b9a264f56119b30046
 
 # Bluetooth (aptX) - from crosshatch - QP1A.190711.020
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
