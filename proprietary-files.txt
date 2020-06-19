@@ -1,38 +1,34 @@
-# ADSP
-vendor/bin/adsprpcd
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsp_hvx_callback_skel.so
-vendor/lib/libadsp_hvx_stub.so
-vendor/lib/libadsprpc.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libsdsprpc.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libsdsprpc.so
+# ADSP - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/adsprpcd|a5e878691577485c9f7ee33dfe02384a13f0a265
+vendor/lib/libadsprpc.so|1cef31d6abef252028ca7fefee6add0938a32576
+vendor/lib/libadsp_default_listener.so|6311c407e31742bd686e6a6fa5ab6ed4d27fb27a
+vendor/lib/libfastcvadsp_stub.so|996345605e1d631151a6b4e9cd9f65b2c7e82dac
+vendor/lib/libfastcvopt.so|5ddc82093d344b11c532bca2af5285de99706917
+vendor/lib/libmdsprpc.so|343bd2c3de3d5977b98bc7f4f4fd95add493f8f4
+vendor/lib64/libadsprpc.so|1b49735ca4ab61687f16fdad3c218f422257f806
+vendor/lib64/libadsp_default_listener.so|3f69a73528c8687607da617a549ec5a449af3cc0
+vendor/lib64/libfastcvadsp_stub.so|f101b66fa4a450b5af2e6aa9f7aaa28f9a876005
+vendor/lib64/libfastcvopt.so|4c2f8b95479ae5416b61388d343b7dcd9b12d390
+vendor/lib64/libmdsprpc.so|e6a66132a0b0c5315e61a210a745576f35607f98
 
-# ADSP modules
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_stats.so
-vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so
-vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so
-vendor/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libvpp_frc.so
-vendor/lib/rfsa/adsp/libvpp_svc_skel.so
+# ADSP-Modules - from LA.UM.8.6.r1-04400-89xx.0
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so|5607a78451b621bb6399878ab58ba896c72797ab
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|035272c1d77bcd04e3a838056d512964744c9322
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|6a1d6ee55cc65d0f12f6a9bfd04823b46d2d6a24
+vendor/lib/rfsa/adsp/libadsp_hvx_stats.so|2f6abffe644ed918ff1a7e0e330f8e9c32add72c
+vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so|3f82d78a7c9e88c5fdc02dc0761349e4ab95abf8
+vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so|b21151ad414cd7310117fceb924a72fd20e97257
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|5c82ad9cfe3f30105d899e2a4e90cc7566f81252
+vendor/lib/rfsa/adsp/libdspCV_skel.so|628985174b0088bed21c866d7984d23855e5e150
+vendor/lib/rfsa/adsp/libfastcvadsp.so|9818625bfa018f517e32a8f4a1e7fb4b255e5049
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|1ff4a48009e88435d93fd2b9b0c5ea59cedbb4f7
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|3e9c52069ff07e50191d3b3afb33b30409241ab6
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|944169db3ac67056b92ef4f850f69346958370b5
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
+
+# ADSP [Modules] - OOS
+vendor/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so|5a091a4ea958d8d5c841c9f175500b185e279378
+vendor/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so|0eba88c4bb08ef4f3920547b1366e6f8e044f99a
 
 # Alipay
 -priv-app/IFAAService/IFAAService.apk
