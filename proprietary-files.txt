@@ -45,27 +45,39 @@ product/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc5
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|f764999a53054c78f9e8a6f1d1bfcad3d446fb02
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|8ce47bae3b903a56697c69b416927e569d7e7b80
 
-# Audio
-etc/firmware/tfa98xx.cnt
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libqtigef.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
+# Audio - from LA.UM.8.6.r1-04400-89xx.0
+vendor/lib/libacdb-fts.so|6bbcdd34b8344964c54d0a072e63feec71673b7c
+vendor/lib/libacdbloader.so|d4a41a817ae856c0c727d6f9360c29ee0c2f410a
+vendor/lib/libacdbrtac.so|863cc396b3234bdb978b312bce7746ff1f1a6769
+vendor/lib/libadiertac.so|59bd9c9c2df081580088df25274cb0a196221b80
+vendor/lib/libadm.so|0bd0e69289c897a50fefe16a0d29b25289973171
+vendor/lib/libaudcal.so|dda994bbd37d3c178120791a911fb219a2ccb5ca
+vendor/lib/libaudioalsa.so|1c0615d720024b5bd7ac28bec13d37ab7102b57f
+vendor/lib/libdrc.so|55fc13d205ce3199de2cf1f9c1dab479909c15be
+vendor/lib/libqtigef.so|5630df4e52109c0602d441d5d63bd342d202faf4
+vendor/lib/libsurround_3mic_proc.so|aac9411dc243dfee813be038969c5337fe36b1ca
+vendor/lib/soundfx/libqcbassboost.so|223896ecb679384ba4e66d0b6905ca24ae1dda4d
+vendor/lib/soundfx/libqcreverb.so|62be9233cf5e259370a821ef6dc0cb0304b9416c
+vendor/lib/soundfx/libqcvirt.so|b6c332827ad84fdde9b7e57ca073928a23bbd807
+vendor/lib64/libacdb-fts.so|9ad8551afa5a372b19ce295b61d5d9f8f7f69700
+vendor/lib64/libacdbloader.so|954efba4057678d92e915ac0c8b5c33b4173822d
+vendor/lib64/libacdbrtac.so|220366b0464fe4a8cb04e17feb8bd5da41cbe297
+vendor/lib64/libadiertac.so|87302b3eaa3bb2465c3823d5f9089f3030d9a7a5
+vendor/lib64/libaudcal.so|6964ecc9607ae9c05ee7b37cbff66c0b37bde216
+vendor/lib64/libaudioalsa.so|af924f5a37d3066a97175f1343ea5c9484689ee3
+vendor/lib64/libqtigef.so|e7f0dfa3cd7252310c9a01f2bc0e4074e6e78871
 
-# Audio ACDB
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+# Audio ACDB - OOS
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|d6dc0a73dcecf4b9ea2d522c4291e5f1a2aa9a56
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|1848dc0af977343001a30d00199ebb45a1f43d5e
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|f2cb98c01573054538a1b3a372933b7bd68b9e6a
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|308b846f2f6321d152dfd807a1f3825f96c2896f
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|2cfc9303cd1fa286fdf343f464499fdb6c14be87
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|29332163751038698b3de367927f9247b42b0133
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|bff85b0dace95a68a38549b0979f7c0fa6fe9467
+
+# Audio (firmware) - OOS
+etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt|4c6acd032186f062fe6c5af58fb82fca91fccbcd
 
 # Bluetooth
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
