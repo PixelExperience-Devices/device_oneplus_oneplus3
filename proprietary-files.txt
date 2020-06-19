@@ -720,10 +720,11 @@ vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib64/libperipheral_client.so
+# Peripheral manager - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/pm-proxy|2ac2d0e897ccb4c9a96b6a4cd3d66c2ef66c5b61
+vendor/bin/pm-service|68a46996bcb9014ebc948990fd943c40206dd8f2
+vendor/lib/libperipheral_client.so|7c096cff421a96be6490e1f004a57ee3b6b6e088
+vendor/lib64/libperipheral_client.so|fe796ff65665d341ddaa5847c26504b96a8c78ee
 
 # Postprocessing - from miui_DAISYGlobal_V11.0.2.0.QDLMIXM_d59f395371_10.0
 vendor/bin/hw/vendor.display.color@1.0-service|dd461fbbbdc7175b8e1e37eba19bc1c48111b5b6
