@@ -64,11 +64,9 @@ extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
 DEVICE_BLOB_ROOT="$AOSP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
-#
-# Correct android.hidl.manager@1.0-java jar name
-#
-sed -i "s|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g" \
-    "$DEVICE_BLOB_ROOT"/etc/permissions/qti_libpermissions.xml
-
+patchelf --set-soname "gatekeeper.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib/hw/gatekeeper.msm8996.so
+patchelf --set-soname "gatekeeper.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib64/hw/gatekeeper.msm8996.so
+patchelf --set-soname "keystore.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib/hw/keystore.msm8996.so
+patchelf --set-soname "keystore.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib64/hw/keystore.msm8996.so
 patchelf --set-soname "vulkan.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib/hw/vulkan.msm8996.so
 patchelf --set-soname "vulkan.msm8996.so" "$DEVICE_BLOB_ROOT"/vendor/lib64/hw/vulkan.msm8996.so
