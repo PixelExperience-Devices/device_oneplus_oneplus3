@@ -6,9 +6,15 @@ ifneq ($(TARGET_USES_QMAA_OVERRIDE_DATA),true)
 endif #TARGET_USES_QMAA_OVERRIDE_DATA
 endif #TARGET_USES_QMAA
 
+BOARD_IPA_LOW_RAM_EXCP_LIST := bengal
+
+ifeq ($(TARGET_HAS_LOW_RAM),true)
+ifneq ($(call is-board-platform-in-list,$(BOARD_IPA_LOW_RAM_EXCP_LIST)),true)
+	TARGET_DISABLE_IPACM := true
+endif
+endif
 
 ifneq ($(TARGET_DISABLE_IPACM),true)
-ifneq ($(TARGET_HAS_LOW_RAM),true)
 BOARD_PLATFORM_LIST := msm8909
 BOARD_PLATFORM_LIST += msm8916
 BOARD_PLATFORM_LIST += msm8917
@@ -37,9 +43,11 @@ include $(CLEAR_VARS)
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../src
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../inc
 
-LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
+LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
-LOCAL_CFLAGS := -DFEATURE_IPA_ANDROID
+LOCAL_CFLAGS := -v
+LOCAL_CFLAGS += -DFEATURE_IPA_ANDROID
 LOCAL_CFLAGS += -DFEATURE_IPACM_RESTART
 
 ifeq ($(call is-board-platform-in-list,$(BOARD_ETH_BRIDGE_LIST)),true)
@@ -47,7 +55,7 @@ LOCAL_CFLAGS += -DFEATURE_ETH_BRIDGE_LE
 endif
 
 LOCAL_CFLAGS += -DFEATURE_IPACM_HAL -Wall -Werror -Wno-error=macro-redefined
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 LOCAL_CFLAGS += -DDEBUG
 endif
 
@@ -134,7 +142,6 @@ LOCAL_MODULE_OWNER := ipacm
 include $(BUILD_PREBUILT)
 
 endif # $(TARGET_ARCH)
-endif
 endif
 endif
 endif
