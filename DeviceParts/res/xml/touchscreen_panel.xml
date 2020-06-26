@@ -16,7 +16,7 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/slider_dashboard_summary">
+    <PreferenceCategory android:title="@string/notification_slider_category_title">
 
         <ListPreference
             android:key="keycode_top_position"
