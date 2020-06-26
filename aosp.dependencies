@@ -1,15 +1,15 @@
 [
   {
-    "repository": "Gaurav241/kernel_oneplus_msm8996",
+    "repository": "PixelExperience-Devices/kernel_oneplus_msm8996",
     "target_path": "kernel/oneplus/msm8996",
     "branch": "ten",
     "remote": "github"
   },
   {
-    "remote": "github",
-    "repository": "Gaurav241/proprietary_vendor_oneplus",
+    "repository": "PixelExperience-Devices/vendor_oneplus",
     "target_path": "vendor/oneplus",
-    "branch": "lineage-17.1"
+    "branch": "ten",
+    "remote": "github"
   },
   {
     "repository": "packages_apps_PixelLiveWallpaper",
