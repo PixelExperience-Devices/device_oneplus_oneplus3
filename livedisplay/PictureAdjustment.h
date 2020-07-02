@@ -17,22 +17,27 @@
 #ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_0_PICTUREADJUSTMENT_H
 #define VENDOR_LINEAGE_LIVEDISPLAY_V2_0_PICTUREADJUSTMENT_H
 
+#include <hidl/MQDescriptor.h>
+#include <hidl/Status.h>
 #include <vendor/lineage/livedisplay/2.0/IPictureAdjustment.h>
-
-#include "SDMController.h"
 
 namespace vendor {
 namespace lineage {
 namespace livedisplay {
 namespace V2_0 {
-namespace sdm {
+namespace implementation {
 
+using ::android::hardware::hidl_array;
+using ::android::hardware::hidl_memory;
+using ::android::hardware::hidl_string;
+using ::android::hardware::hidl_vec;
 using ::android::hardware::Return;
 using ::android::hardware::Void;
+using ::android::sp;
 
 class PictureAdjustment : public IPictureAdjustment {
-   public:
-    PictureAdjustment(std::shared_ptr<SDMController> controller, uint64_t cookie);
+  public:
+    PictureAdjustment(void* libHandle, uint64_t cookie);
 
     bool isSupported();
 
@@ -49,15 +54,21 @@ class PictureAdjustment : public IPictureAdjustment {
 
     static void updateDefaultPictureAdjustment();
 
-   private:
-    std::shared_ptr<SDMController> mController;
+  private:
+    void* mLibHandle;
     uint64_t mCookie;
-    HSIC mDefaultPictureAdjustment;
+
+    int32_t (*disp_api_get_feature_version)(uint64_t, uint32_t, void*, uint32_t*);
+    int32_t (*disp_api_get_global_pa_range)(uint64_t, uint32_t, void*);
+    int32_t (*disp_api_get_global_pa_config)(uint64_t, uint32_t, uint32_t*, void*);
+    int32_t (*disp_api_set_global_pa_config)(uint64_t, uint32_t, uint32_t, void*);
 
     HSIC getPictureAdjustmentInternal();
+
+    HSIC mDefaultPictureAdjustment;
 };
 
-}  // namespace sdm
+}  // namespace implementation
 }  // namespace V2_0
 }  // namespace livedisplay
 }  // namespace lineage

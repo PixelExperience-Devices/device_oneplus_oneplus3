@@ -21,20 +21,55 @@ namespace vendor {
 namespace lineage {
 namespace livedisplay {
 namespace V2_0 {
-namespace sdm {
+namespace implementation {
 
-enum feature_ver_sw {
-    FEATURE_VER_SW_API,
-    FEATURE_VER_SW_PA_API,
-    FEATURE_VER_SW_MEMCOLOR_API,
-    FEATURE_VER_SW_COLORBAL_API,
-    FEATURE_VER_SW_SAVEMODES_API,
-    FEATURE_VER_SW_ADAPT_BACKLIGHT_API,
-    FEATURE_VER_SW_SVI_API,
-    FEATURE_VER_SW_DISP_INFO_API
+struct sdm_feature_version {
+    uint8_t x, y;
+    uint16_t z;
 };
 
-}  // namespace sdm
+struct sdm_disp_mode {
+    int32_t id;
+    int32_t type;
+    int32_t len;
+    char* name;
+};
+
+struct hsic_data {
+    int32_t hue;
+    float saturation;
+    float intensity;
+    float contrast;
+    float saturationThreshold;
+};
+
+struct hsic_config {
+    uint32_t unused;
+    hsic_data data;
+};
+
+struct hsic_int_range {
+    int32_t max;
+    int32_t min;
+    uint32_t step;
+};
+
+struct hsic_float_range {
+    float max;
+    float min;
+    float step;
+};
+
+struct hsic_ranges {
+    uint32_t unused;
+    struct hsic_int_range hue;
+    struct hsic_float_range saturation;
+    struct hsic_float_range intensity;
+    struct hsic_float_range contrast;
+    struct hsic_float_range saturationThreshold;
+};
+
+}  // namespace implementation
 }  // namespace V2_0
 }  // namespace livedisplay
 }  // namespace lineage

@@ -14,35 +14,21 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_0_ADAPTIVEBACKLIGHT_H
-#define VENDOR_LINEAGE_LIVEDISPLAY_V2_0_ADAPTIVEBACKLIGHT_H
-
-#include <vendor/lineage/livedisplay/2.0/IAdaptiveBacklight.h>
+#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
+#define VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H
 
 namespace vendor {
 namespace lineage {
 namespace livedisplay {
 namespace V2_0 {
-namespace sdm {
+namespace implementation {
 
-using ::android::hardware::Return;
+#define PICTURE_ADJUSTMENT_FEATURE 1
 
-class AdaptiveBacklight : public IAdaptiveBacklight {
-   public:
-    bool isSupported();
-
-    // Methods from ::vendor::lineage::livedisplay::V2_0::IAdaptiveBacklight follow.
-    Return<bool> isEnabled() override;
-    Return<bool> setEnabled(bool enabled) override;
-
-   private:
-    bool mEnabled = false;
-};
-
-}  // namespace sdm
+}  // namespace implementation
 }  // namespace V2_0
 }  // namespace livedisplay
 }  // namespace lineage
 }  // namespace vendor
 
-#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_0_ADAPTIVEBACKLIGHT_H
+#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_0_SDM_CONSTANTS_H

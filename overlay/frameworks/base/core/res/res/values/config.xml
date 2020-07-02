@@ -519,32 +519,7 @@
     -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 
-    <!-- Display mode remapping table.
-         If the mode names returned by the backend do not match
-         the predefined and translated strings in the Settings
-         app, they can be remapped here. The format is
-         "oldname:newname", one per entry. -->
-    <string-array name="config_displayModeMappings" translatable="false">
-        <item>standard:standard</item>
-        <item>dynamic:dynamic</item>
-        <item>cinema:cinema</item>
-        <item>astronomy:astronomy</item>
-        <item>photography:photography</item>
-        <item>basic:basic</item>
-        <item>srgb:srgb</item>
-        <item>dci_p3:dci_p3</item>
-    </string-array>
-
-    <!-- Should we filter any display modes which are unampped? -->
-    <bool name="config_filterDisplayModes">true</bool>
-
-    <!-- Turn on LiveDisplay auto mode by default -->
-    <integer name="config_defaultLiveDisplayMode">2</integer>
-
     <!-- Enable live display -->
     <bool name="config_liveDisplayAvailable">true</bool>
-
-    <!-- Use live display for temperature control-->
-    <bool name="config_nightDisplayAvailable">false</bool>
 
 </resources>

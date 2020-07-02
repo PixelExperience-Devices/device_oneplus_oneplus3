@@ -3,5 +3,6 @@ soong_namespace {
 
 subdirs = [
     "liblight",
+    "livedisplay",
     "usb",
 ]

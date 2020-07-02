@@ -17,11 +17,8 @@ cc_defaults {
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
-        "AdaptiveBacklight.cpp",
         "DisplayModes.cpp",
         "PictureAdjustment.cpp",
-        "SDMController.cpp",
-        "Utils.cpp",
         "service.cpp",
     ],
     shared_libs: [
