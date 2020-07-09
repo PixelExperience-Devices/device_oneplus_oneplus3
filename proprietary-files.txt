@@ -1009,6 +1009,9 @@ etc/firmware/tp/fw_synaptics_15801b.img
 etc/firmware/tp/fw_synaptics_15811.img
 etc/firmware/tp/fw_synaptics_touchkey.img
 
+# WLAN - LA.UM.8.6.2.r1
+-vendor/app/IWlanService/IWlanService.apk
+
 # Wifi
 vendor/bin/cnss-daemon
 
