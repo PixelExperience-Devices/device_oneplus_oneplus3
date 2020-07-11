@@ -113,10 +113,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# APN
-PRODUCT_COPY_FILES += \
-    device/oneplus/oneplus3/configs/apns-conf.xml:system/etc/apns-conf.xml
-
 # Alipay
 PRODUCT_PACKAGES += \
     org.ifaa.android.manager
