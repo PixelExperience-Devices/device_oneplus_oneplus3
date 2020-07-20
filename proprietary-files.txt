@@ -1017,7 +1017,7 @@ etc/firmware/tp/fw_synaptics_15811.img
 etc/firmware/tp/fw_synaptics_touchkey.img
 
 # Wifi
-vendor/bin/cnss-daemon|f5a77a8dfdd0422892d14f2208f9bb1fbb47cf87
+vendor/bin/cnss-daemon
 
 # WiFi Display - from LA.UM.8.6.r1-04400-89xx.0
 bin/wfdservice|934817e5689fe6f8b54032902de58c203b8ec2e7
