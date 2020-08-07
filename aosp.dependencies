@@ -6,8 +6,8 @@
     "remote": "github"
   },
   {
-    "repository": "PixelExperience-Devices/vendor_oneplus",
-    "target_path": "vendor/oneplus",
+    "repository": "Gaurav241/vendor_oneplus",
+    "target_path": "vendor/oneplus/oneplus3",
     "branch": "ten",
     "remote": "github"
   },
