@@ -390,15 +390,9 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# OnePlus Settings
+# Device Settings
 PRODUCT_PACKAGES += \
-    DeviceParts \
-    com.oneplus.keyhandler
-
-PRODUCT_SYSTEM_SERVER_JARS += com.oneplus.keyhandler
-
-# Never dexopt the KeyHandler
-$(call add-product-dex-preopt-module-config, com.oneplus.keyhandler, disable)
+    DeviceSettings
 
 # Power
 PRODUCT_PACKAGES += \

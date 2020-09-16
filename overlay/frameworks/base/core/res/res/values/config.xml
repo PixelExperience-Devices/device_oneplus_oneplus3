@@ -485,16 +485,16 @@
     <!-- Button backlight -->
     <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 
-    <!-- The list absolute paths of jar/apk files containing the device specific handlers,
-         delimited by File.pathSeparator, which defaults to ":" on Android -->
+    <!-- Paths to the libraries that contain device specific key handlers -->
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
-        <item>/system/framework/com.oneplus.keyhandler.jar</item>
+        <item>/system/priv-app/DeviceSettings/DeviceSettings.apk</item>
+        <item>/system/priv-app/TouchGestures/TouchGestures.apk</item>
     </string-array>
 
-    <!-- Full qualified name of the class that implements
-         com.android.internal.os.DeviceKeyHandler interface. -->
+    <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>com.oneplus.settings.device.KeyHandler</item>
+        <item>com.aosip.device.DeviceSettings.KeyHandler</item>
+        <item>com.android.touch.gestures.KeyHandler</item>
     </string-array>
 
     <!-- Whether device ignores the RSSNR signal implementation-->
