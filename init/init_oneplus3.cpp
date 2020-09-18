@@ -50,8 +50,8 @@ constexpr const char* BUILD_DESCRIPTION[] = {
 };
 
 constexpr const char* BUILD_FINGERPRINT[] = {
-        "OnePlus/OnePlus3/OnePlus3:8.0.0/OPR1.170623.032/02281230:user/release-keys",
-        "OnePlus/OnePlus3/OnePlus3T:8.0.0/OPR1.170623.032/02281230:user/release-keys",
+        "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys",
+        "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys",
 };
 
 void property_override(char const prop[], char const value[]) {
