@@ -22,7 +22,7 @@ persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
 debug.egl.hw=1
 debug.gralloc.enable_fb_ubwc=1
 dalvik.vm.heapsize=36m
