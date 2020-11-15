@@ -662,9 +662,10 @@ vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8996.so|9d4ae263688b
 vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8996.so|265cd4d0246f5e2e80916dd1c96262be28306b31
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.msm8996.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libsmwrapper.so
+vendor/lib/hw/sound_trigger.primary.msm8953.so:vendor/lib/hw/sound_trigger.primary.msm8996.so|53425351a1e5845ae4aafaf2db8206a801aa25a0
+vendor/lib/libadpcmdec.so|be5fdf08a08b635816381e61b6bbf2874c62f613
+vendor/lib/libsmwrapper.so|1ab31b5378265784145defa47d50435029cf5f57
+vendor/lib64/hw/sound_trigger.primary.msm8953.so:vendor/lib64/hw/sound_trigger.primary.msm8996.so|62a3b3814deefbb1a83759fea4b6b705af6b36af
 
 # Media - from LA.UM.8.6.r1-04400-89xx.0
 lib/extractors/libmmparserextractor.so|25e6e1dcf8a2bb76aab935c32428af8f2c7efc69
