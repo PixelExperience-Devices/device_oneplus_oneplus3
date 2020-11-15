@@ -168,8 +168,8 @@ persist.vendor.camera.display.umax=1920x1080
 persist.vendor.camera.display.lmax=1280x720
 
 # Camera
-vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android
-vendor.camera.aux.packagelist=com.oneplus.camera,com.google.android.GoogleCamera
+vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.android,com.skype.raider
+vendor.camera.aux.packagelist=com.oneplus.camera,com.google.android.GoogleCamera,org.codeaurora.snapcam
 persist.camera.privapp.list=com.oneplus.camera
 persist.vendor.camera.privapp.list=com.oneplus.camera
 
