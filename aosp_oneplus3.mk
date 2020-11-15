@@ -41,8 +41,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-BUILD_FINGERPRINT := google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys
-BUILD_DESCRIPTION := coral-user 11 RP1A.201005.004 6782484 release-keys
+BUILD_FINGERPRINT := google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys
+BUILD_DESCRIPTION := coral-user 11 RP1A.201105.002 6869500 release-keys
 
 TARGET_VENDOR := oneplus
 
