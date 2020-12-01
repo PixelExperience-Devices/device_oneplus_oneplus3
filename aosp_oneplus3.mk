@@ -32,6 +32,7 @@ PRODUCT_NAME := aosp_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
+PRODUCT_MODEL := OnePlus 3/3T
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
