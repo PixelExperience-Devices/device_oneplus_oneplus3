@@ -273,6 +273,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# IMS
+PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor
+
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
