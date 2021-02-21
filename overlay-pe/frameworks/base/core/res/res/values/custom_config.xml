@@ -41,4 +41,11 @@
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/battery/fastchg_status</string>
+
+    <!-- Button backlight control. Possible values are:
+            0 - Not supported
+            1 - Supported, but only on/off mode
+            2 - Supported with variable brightness control
+    -->
+    <integer name="config_deviceSupportsButtonBrightnessControl">2</integer>
 </resources>
