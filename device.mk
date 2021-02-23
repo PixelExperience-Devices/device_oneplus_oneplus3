@@ -225,6 +225,10 @@ PRODUCT_COPY_FILES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Display/Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8996 \
