@@ -226,6 +226,10 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Display/Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8996 \
