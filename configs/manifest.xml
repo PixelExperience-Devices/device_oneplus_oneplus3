@@ -219,6 +219,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>slot2</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.ims.factory</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IImsFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- RIL UIM REMOTE CLIENT -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_client</name>
