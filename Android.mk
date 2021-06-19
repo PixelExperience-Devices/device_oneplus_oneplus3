@@ -30,6 +30,11 @@ include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
+# Hal
+HAL_PATH := hardware/qcom-caf/msm8996
+
+include $(call all-makefiles-under,$(HAL_PATH)/audio)
+
 #A/B builds require us to create the mount points at compile time.
 #Just creating it for all cases since it does not hurt.
 FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt
