@@ -61,9 +61,6 @@ function blob_fixup() {
         vendor/lib64/libsettings.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
             ;;
-        vendor/lib\(64\)?/hw/vulkan.msm8996.so)
-            "${PATCHELF}" --set-soname "vulkan.msm8996.so" "${2}"
-            ;;
         etc/permissions/qti_libpermissions.xml)
             sed -i "s/name=\"android.hidl.manager-V1.0-java/name=\"android.hidl.manager@1.0-java/g" "${2}"
             ;;
