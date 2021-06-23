@@ -1,8 +1,10 @@
 # Audio
 audio.offload.min.duration.secs=30
 
-# CNE
+# CNE/DPM
 persist.vendor.cne.feature=1
+persist.vendor.dpm.feature=1
+persist.vendor.dpm.loglevel=0
 
 # Camera
 persist.sys.camera.display.umax=1920x1080
