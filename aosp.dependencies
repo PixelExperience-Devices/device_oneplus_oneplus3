@@ -7,7 +7,7 @@
   {
     "repository"  : "vendor_oneplus_oneplus3",
     "target_path" : "vendor/oneplus/oneplus3",
-    "branch"      : "eleven",
+    "branch"      : "eleven-plus-wip",
     "remote"      : "pixel-devices-blobs"
   }
 ]
