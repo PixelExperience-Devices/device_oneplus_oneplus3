@@ -21,6 +21,9 @@
 # definition file).
 #
 
+# GoogleCameraGo
+$(call inherit-product, packages/apps/GoogleCam/gcam.mk)
+
 # Device was launched with M
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
@@ -199,7 +202,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
 

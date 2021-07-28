@@ -5,6 +5,12 @@
     "branch"      : "eleven"
   },
   {
+    "repository": "Gaurav241/packages_apps_GoogleCamera",
+    "target_path": "packages/apps/GoogleCam",
+    "branch": "eleven",
+    "remote": "github"
+  },
+  {
     "repository"  : "vendor_oneplus_oneplus3",
     "target_path" : "vendor/oneplus/oneplus3",
     "branch"      : "eleven",
