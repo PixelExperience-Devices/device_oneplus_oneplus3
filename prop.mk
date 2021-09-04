@@ -63,6 +63,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.foss.config=1 \
     vendor.display.foss.config_path=/vendor/etc/FOSSConfig.xml
 
+# DRM
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true \
+    media.mediadrmservice.enable=true
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES  += \
     vendor.display.disable_skip_validate=1 \
