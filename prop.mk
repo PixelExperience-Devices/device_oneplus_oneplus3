@@ -72,7 +72,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES  += \
     vendor.display.disable_skip_validate=1 \
     vendor.video.disable.ubwc=1 \
-    ro.opengles.version=196610
+    ro.opengles.version=196610 \
+    ro.hardware.vulkan=adreno \
+    ro.hardware.egl=adreno
 
 # Hdmi
 PRODUCT_PROPERTY_OVERRIDES += \

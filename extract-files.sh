@@ -55,9 +55,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib\(64\)?/hw/vulkan.msm8996.so)
-            "${PATCHELF}" --set-soname "vulkan.msm8996.so" "${2}"
-            ;;
         etc/permissions/qti_libpermissions.xml)
             sed -i "s/name=\"android.hidl.manager-V1.0-java/name=\"android.hidl.manager@1.0-java/g" "${2}"
             ;;
