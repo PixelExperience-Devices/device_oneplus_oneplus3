@@ -55,12 +55,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libwvhidl.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
-            ;;
-        vendor/lib64/libsettings.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
-            ;;
         vendor/lib\(64\)?/hw/vulkan.msm8996.so)
             "${PATCHELF}" --set-soname "vulkan.msm8996.so" "${2}"
             ;;
