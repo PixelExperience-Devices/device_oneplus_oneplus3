@@ -26,7 +26,6 @@
 /data/vendor/oemnvitems(/.*)?                                   u:object_r:vendor_radio_data_file:s0
 /dev/block/platform/soc/624000.ufshc/by-name/oem_dycnvbk        u:object_r:modem_efs_partition_device:s0
 /dev/block/platform/soc/624000.ufshc/by-name/oem_stanvbk        u:object_r:modem_efs_partition_device:s0
-/(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.param@1\.0-service                    u:object_r:hal_param_default_exec:s0
 
 # Widevine
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service.widevine                     u:object_r:hal_drm_widevine_exec:s0
