@@ -5,9 +5,9 @@
     "branch"      : "eleven"
   },
   {
-    "repository"  : "vendor_oneplus_oneplus3",
+    "repository"  : "OnePlus-3/android_vendor_oneplus_oneplus3",
     "target_path" : "vendor/oneplus/oneplus3",
     "branch"      : "eleven",
-    "remote"      : "pixel-devices-blobs"
+    "remote"      : "github"
   }
 ]
