@@ -9,5 +9,11 @@
     "target_path" : "vendor/oneplus/oneplus3",
     "branch"      : "eleven",
     "remote"      : "github"
+  },
+  {
+    "repository"  : "OnePlus-3/kernel_oneplus_oneplus3-headers",
+    "target_path" : "kernel/oneplus/oneplus3-headers",
+    "branch"      : "master",
+    "remote"      : "github"
   }
 ]
