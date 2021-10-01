@@ -67,6 +67,7 @@ TARGET_KERNEL_CONFIG := lineageos_oneplus3_defconfig
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
+OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-r
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
